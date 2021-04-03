@@ -1,0 +1,131 @@
+body {
+    font-family: Arial;
+    font-size:16px;
+    width: 1000px;
+    margin: 0px auto;
+}
+
+#menu_top {
+    background: #141414;
+    height: 40px;
+    position: sticky;
+    top: 0;
+}
+
+#banner {
+    height: auto;
+    width: 1000px;
+}
+
+#main #left {
+    width: 700px;
+    float:left;
+    min-height: 400px;
+}
+
+#main #right {
+    width: 300px;
+    float: left;
+    min-height: 400px;
+}
+
+#footer{
+    background: black;
+    width: 1000px;
+    text-align: center;
+    height: 60px;
+    color: white;
+    clear: left;
+    line-height: 60px;
+}
+
+#menu_top ul {
+    margin: 0px;
+    padding: 0px;
+
+}
+#menu_top ul li {
+    list-style-type: none;
+    float: left;
+}
+
+#menu_top ul li a {
+    text-decoration: none;
+    display: block;
+    height: 40px;
+    line-height: 40px;
+    color: white;
+    padding: 0px 20px 0px 20px;
+    border-right:1px solid white;
+}
+#menu_top ul li a.active {
+    background: darkblue;
+}
+
+#banner img{
+    width: 1000px;
+}
+
+#main #left ul li img {
+    float: left;
+    height: 200px;
+    width: 200px;
+    margin-right: 10px;
+    margin-bottom: 20px;
+}
+
+
+
+#main #left ul {
+    margin: 0px;
+    padding: 0px;
+
+}
+#main #left ul li {
+    clear: both;
+    list-style-type: none;
+    border-bottom: 2px solid black;
+    float: left;
+    margin-bottom: 20px;
+}
+#main #left ul li h2 {
+    font-size: 16px;
+    margin-top: 0px;
+}
+
+#main {
+    margin-top:20px;
+}
+
+#main #right .menu_right ul {
+    margin: -15px 0px 0px 0px;
+    padding: 0px 0px 10px 0px;
+    border: 1px solid gray;
+}
+#main #right .menu_right ul li {
+    list-style-type: square ;
+    margin-left: 20px;
+
+}
+
+#main #right .menu_right ul li a {
+    display: block;
+    text-decoration: none;
+    line-height: 50px;
+    border-bottom: 1px solid gray;
+    margin-left: 10px;
+}
+
+#main #right .menu_right ul li a:hover{
+    color: cyan;
+}
+
+#main #right .menu_right h3 {
+    background: rgb(55, 101, 101) url(../images/iconmenu.jpg) no-repeat 30px/32px 32px;
+    height: 40px;
+    margin-top: 0px;
+    text-align: center;
+    line-height: 40px;
+    color : white;
+    text-indent: -50px;
+}
