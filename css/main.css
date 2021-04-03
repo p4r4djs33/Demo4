@@ -1,131 +1,166 @@
+html {
+    background: #FC466B;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #3F5EFB, #FC466B);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #3F5EFB, #FC466B); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    
+}
+
 body {
     font-family: Arial;
-    font-size:16px;
-    width: 1000px;
-    margin: 0px auto;
+    font-size  : 16px;
+    width      : 1000px;
+    margin     : 0px auto;
 }
 
 #menu_top {
     background: #141414;
-    height: 40px;
-    position: sticky;
-    top: 0;
+    height    : 40px;
+    position  : sticky;
+    top       : 0;
 }
 
 #banner {
     height: auto;
-    width: 1000px;
+    width : 1000px;
 }
 
 #main #left {
-    width: 700px;
-    float:left;
+    width     : 600px;
+    float     : left;
     min-height: 400px;
+    background: white;
+    padding: 20px 20px;
 }
 
 #main #right {
-    width: 300px;
-    float: left;
-    min-height: 400px;
+    width      : 300px;
+    float      : left;
+    margin-left: 50px;
+    background:white;
+
 }
 
-#footer{
-    background: black;
-    width: 1000px;
-    text-align: center;
-    height: 60px;
-    color: white;
-    clear: left;
+#footer {
+    background : black;
+    width      : 1000px;
+    text-align : center;
+    height     : 60px;
+    color      : white;
+    clear      : left;
     line-height: 60px;
 }
 
 #menu_top ul {
-    margin: 0px;
+    margin : 0px;
     padding: 0px;
 
 }
+
 #menu_top ul li {
     list-style-type: none;
-    float: left;
+    float          : left;
 }
 
 #menu_top ul li a {
     text-decoration: none;
-    display: block;
-    height: 40px;
-    line-height: 40px;
-    color: white;
-    padding: 0px 20px 0px 20px;
-    border-right:1px solid white;
+    display        : block;
+    height         : 40px;
+    line-height    : 40px;
+    color          : white;
+    padding        : 0px 20px 0px 20px;
+    border-right   : 1px solid white;
 }
+
 #menu_top ul li a.active {
     background: darkblue;
 }
 
-#banner img{
+#banner img {
     width: 1000px;
 }
 
 #main #left ul li img {
-    float: left;
-    height: 200px;
-    width: 200px;
-    margin-right: 10px;
+    float        : left;
+    height       : 200px;
+    width        : 200px;
+    margin-right : 10px;
     margin-bottom: 20px;
 }
 
 
 
 #main #left ul {
-    margin: 0px;
+    margin : 0px;
     padding: 0px;
 
 }
+
 #main #left ul li {
-    clear: both;
+    clear          : both;
     list-style-type: none;
-    border-bottom: 2px solid black;
-    float: left;
-    margin-bottom: 20px;
+    border-bottom  : 2px solid black;
+    float          : left;
+    margin-bottom  : 20px;
 }
+
 #main #left ul li h2 {
-    font-size: 16px;
+    font-size : 16px;
     margin-top: 0px;
 }
 
 #main {
-    margin-top:20px;
+    margin-top: 20px;
 }
 
+
 #main #right .menu_right ul {
-    margin: -15px 0px 0px 0px;
+    margin : -20px 0px 0px 0px;
     padding: 0px 0px 10px 0px;
-    border: 1px solid gray;
+    border : 1px solid gray;
 }
+
 #main #right .menu_right ul li {
-    list-style-type: square ;
-    margin-left: 20px;
+    list-style-type: square;
+    margin-left    : 20px;
 
 }
 
 #main #right .menu_right ul li a {
-    display: block;
+    display        : block;
     text-decoration: none;
-    line-height: 50px;
-    border-bottom: 1px solid gray;
-    margin-left: 10px;
+    line-height    : 50px;
+    border-bottom  : 1px solid gray;
+    margin-left    : 10px;
 }
 
-#main #right .menu_right ul li a:hover{
+#main #right .menu_right ul li a:hover {
     color: cyan;
 }
 
 #main #right .menu_right h3 {
-    background: rgb(55, 101, 101) url(../images/iconmenu.jpg) no-repeat 30px/32px 32px;
-    height: 40px;
-    margin-top: 0px;
-    text-align: center;
+    background : rgb(55, 101, 101) url(../images/iconmenu.jpg) no-repeat 30px/32px 32px;
+    height     : 40px;
+    margin-top : 0px;
+    text-align : center;
     line-height: 40px;
-    color : white;
+    color      : white;
     text-indent: -50px;
+}
+
+pre {
+    background: rgb(213, 211, 211);
+    width     : 600px;
+    overflow  : auto;
+}
+
+code {
+    width   : 700px;
+    height  : auto;
+    overflow: scroll;
+}
+
+#main #left ul li h2 a {
+    list-style-type: none ;
+    text-decoration: none;
+    color: black;
 }

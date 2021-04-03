@@ -22,37 +22,99 @@
     </div>
     <div id="main">
         <div id="left">
-            <ul>
-                <li>
-                    <img src="images/let&var.jpg">
-                    <h2>So sánh sự khác nhau giữa Let và Var</h2>
-                    Tại sao lại cần tới let và const dù trước đó đã có var để khai báo biến, thì ở bài viết này là lý do của từng kiểu khai báo biến.
-                </li>
-                <li>
-                    <img src="images/sss.jpg">
-                    <h2>So sánh sự khác nhau giữa slice - substring - substr</h2>
-                    Hàm substr() và substring(), slice() đều là hàm cắt chuỗi trong Javascript. Nhưng mỗi hàm lại có công dụng và hành vi riêng của nó.
-                </li>
-                <li>
-                    <img src="images/moment.jpg">
-                    <h2>Tìm hiểu về Moment JS</h2>
-                    Moment.js là một thư viện mạnh dùng để thao tác xử lý datetime trong javascript.
-                    Moment.js được thiết kế hoạt động trong cả browser và Node.js
-                </li>
-            </ul>
+            <h3>Giới thiệu về Moment.js</h3>
+            <div>
+                <p>Moment.js là một thư viện mạnh dùng để thao tác xử lý datetime trong javascript.</p>
+                <p>Moment.js được thiết kế hoạt động trong cả browser và Node.js</p>
+            </div>
+            <pre><code>
+npm install moment --save   # npm
+yarn add moment             # Yarn
+Install-Package Moment.js   # NuGet
+spm install moment --save   # spm
+meteor add momentjs:moment  # meteor
+bower install moment --save # bower (deprecated)
+            </code></pre>
+            <h4>Parse</h4>
+            <div>
+                <p>Thay vì sửa đổi Date.prototype nguyên bản, Moment.js tạo một wrapper cho Date object. Để có được đối tượng wrapper này, chỉ cần gọi moment () với một trong các loại đầu vào được hỗ trợ.</p>
+                <p>Moment.prototype được thể hiện qua moment.fn . Nếu bạn muốn thêm các chức năng của riêng bạn, đó là nơi bạn sẽ đặt chúng.</p>
+                <p>Để dễ tham chiếu, bất kỳ phương pháp nào trên Moment.prototype sẽ được tham chiếu trong các tài liệu như moment#method. Nên Moment.prototype.format == moment.fn.format == moment#format.</p>
+            </div>
+            <h4>Now</h4>
+            <div>
+                <p>Cú pháp moment(); Để có được ngày và giờ hiện tại, chỉ cần gọi moment () mà không có tham số. var now = moment();</p>
+            </div>
+            <h4>String</h4>
+            <pre>
+Cú pháp: moment(String); Ví dụ: var day = moment("1995-12-25");
+            </pre>
+            <h4>String + Format</h4>
+            <p>Định dạng moment theo chuẩn quy định Cú pháp:</p>
+            <pre>
+moment(String, String);
+moment(String, String, String);
+moment(String, String, Boolean);
+moment(String, String, String, Boolean);
+            </pre>
+            <p>Nếu bạn biết định dạng của một chuỗi đầu vào, bạn có thể sử dụng nó để phân tích một thời điểm.</p>
+            <pre>
+moment("12-25-1995", "MM-DD-YYYY");
+            </pre>
+            <h4>String + Formats</h4>
+            <div>
+                <pre>
+Cú pháp: moment(String, String[], String, Boolean);
+                </pre>
+                <p>Nếu bạn không biết định dạng chính xác của một chuỗi đầu vào, nhưng biết nó có thể là một trong nhiều, bạn có thể sử dụng một mảng các định dạng</p>
+            </div>
+            <h4>Date</h4>
+            <div>
+                <pre>
+Cú pháp: moment(Date); Bạn có thể tạo Moment với đối tượng Javascript Date native sẵn có. Ví dụ:
+var day = new Date(2011, 9, 16);
+var dayWrapper = moment(day);
+                </pre>
+            </div>
+            <h4>Array</h4>
+            <pre>
+Cú pháp: moment(Number[]);
+Bạn có thể tạo ra một moment với một mảng các con số phản chiếu các tham số được truyền đến new Date() [year, month, day, hour, minute, second, millisecond] Ví dụ: moment([2010, 1, 14, 15, 25, 50, 125]); // February 14th, 3:25:50.125 PM
+            </pre>
+            <h4>UTC</h4>
+            <p>Cú pháp:</p>
+            <pre>
+moment.utc();
+moment.utc(Number);
+moment.utc(Number[]);
+moment.utc(String);
+moment.utc(String, String);
+moment.utc(String, String[]);
+moment.utc(String, String, String);
+moment.utc(String, String, Boolean);
+moment.utc(String, String, String, Boolean);
+moment.utc(Moment);
+moment.utc(Date);
+            </pre>
+            <p>Theo mặc định, moment phân tích thời gian và hiển thị theo giờ của local. Nếu bạn muốn parse hay display moment theo UTC, bạn có thể sưr dụng moment.utc().</p>
+            <h4>Get + Set</h4>
+            <p>
+                Moment.js sử dụng overload getters, setters. Bạn có thể quen thuộc với pattern này từ việc sử dụng nó trong jQuery.
+            </p>
+
         </div>
         <div id="right">
             <div class="menu_right">
                 <h3>Danh mục</h3>
                 <ul>
-                    <li><a href="#">So sánh sự khác nhau giữa Let và Var</a></li>
-                    <li><a href="#">So sánh sự khác nhau giữa slice - substring - substr</a></li>
-                    <li><a href="#">Tìm hiểu về Moment JS</a></li>
+                    <li><a href="let-var.html">So sánh sự khác nhau giữa Let và Var</a></li>
+                    <li><a href="s-s-s.html">So sánh sự khác nhau giữa slice - substring - substr</a></li>
+                    <li><a href="moment.html">Tìm hiểu về Moment JS</a></li>
                 </ul>
             </div>
         </div>
     </div>
-    <div id="footer">Footer</div>
+    <div id="footer">Copyright © 2021 All Rights Reserved. Phát biển bởi Vũ Trung Kiên</div>
 
 </body>
 </html>
