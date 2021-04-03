@@ -116,7 +116,7 @@ body {
 #main #right .menu_right ul {
     margin : -20px 0px 0px 0px;
     padding: 0px 0px 10px 0px;
-    border : 1px solid gray;
+    border : 2px solid gray;
 }
 
 #main #right .menu_right ul li {
